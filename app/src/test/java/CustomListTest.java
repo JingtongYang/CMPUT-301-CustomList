@@ -43,5 +43,12 @@ public class CustomListTest {
         assertNotEquals(beforeDelete,afterDelete);
     }
 
-   
+    @Test
+    public void countCitiesTest(){
+        int listSizeBefore = list.countCities();
+        list.addCity(new City("Quebec","QC"));
+        int listSizeAfter = list.countCities();
+        assertEquals(listSizeAfter, listSizeBefore+1);
+    }
+
 }
