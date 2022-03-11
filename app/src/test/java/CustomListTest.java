@@ -42,4 +42,6 @@ public class CustomListTest {
         boolean afterDelete = list.hasCity(city);
         assertNotEquals(beforeDelete,afterDelete);
     }
+
+   
 }
