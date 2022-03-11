@@ -32,4 +32,14 @@ public class CustomListTest {
         boolean afterAdd = list.hasCity(city);
         assertNotEquals(beforeAdd,afterAdd);
    }
+
+    @Test
+    public void deleteTest(){
+        City city = new City("Ontario","ON");
+        list.addCity(city);
+        boolean beforeDelete = list.hasCity(city);
+        list.delete(city);
+        boolean afterDelete = list.hasCity(city);
+        assertNotEquals(beforeDelete,afterDelete);
+    }
 }
